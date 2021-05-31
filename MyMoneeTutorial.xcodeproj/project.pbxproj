@@ -7,15 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EF9D340F5E64861B16054F6 /* Pods_MyMoneeTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BFF07D726D58951D6B4A069 /* Pods_MyMoneeTutorial.framework */; };
+		FA5B285B26561E300065B495 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B285A26561E300065B495 /* NetworkService.swift */; };
+		FA5B285E26563A420065B495 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B285D26563A420065B495 /* Transaction.swift */; };
+		FA5FEEA6264E7F1000D6AED3 /* AddImpianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5FEEA4264E7F1000D6AED3 /* AddImpianViewController.swift */; };
+		FA5FEEA7264E7F1000D6AED3 /* AddImpianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5FEEA5264E7F1000D6AED3 /* AddImpianViewController.xib */; };
+		FA5FEEAA264EF89200D6AED3 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5FEEA9264EF89200D6AED3 /* Profile.swift */; };
+		FA5FEEAE264F1CBF00D6AED3 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5FEEAD264F1CBF00D6AED3 /* HomeService.swift */; };
+		FA63227C264D1CDB0034FC58 /* PengeluaranPemasukan.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63227B264D1CDB0034FC58 /* PengeluaranPemasukan.swift */; };
+		FA632280264D78FD0034FC58 /* ListImpian.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63227F264D78FD0034FC58 /* ListImpian.swift */; };
+		FA632285264D84200034FC58 /* DetilImpianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA632283264D84200034FC58 /* DetilImpianViewController.swift */; };
+		FA632286264D84200034FC58 /* DetilImpianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA632284264D84200034FC58 /* DetilImpianViewController.xib */; };
+		FA63228B264D847F0034FC58 /* EditImpianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA632289264D847F0034FC58 /* EditImpianViewController.swift */; };
+		FA63228C264D847F0034FC58 /* EditImpianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA63228A264D847F0034FC58 /* EditImpianViewController.xib */; };
+		FA6D7797265083C400956EEF /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6D7795265083C400956EEF /* CollectionViewController.swift */; };
+		FA6D7798265083C400956EEF /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6D7796265083C400956EEF /* CollectionViewController.xib */; };
 		FA724D77264AE221001CED6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA724D76264AE221001CED6E /* AppDelegate.swift */; };
 		FA724D79264AE221001CED6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA724D78264AE221001CED6E /* SceneDelegate.swift */; };
 		FA724D7B264AE221001CED6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA724D7A264AE221001CED6E /* ViewController.swift */; };
 		FA724D7E264AE221001CED6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA724D7C264AE221001CED6E /* Main.storyboard */; };
 		FA724D80264AE222001CED6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA724D7F264AE222001CED6E /* Assets.xcassets */; };
 		FA724D83264AE222001CED6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA724D81264AE222001CED6E /* LaunchScreen.storyboard */; };
+		FA724D95264AE432001CED6E /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA724D93264AE432001CED6E /* MainTabController.swift */; };
+		FA724D96264AE432001CED6E /* MainTabController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA724D94264AE432001CED6E /* MainTabController.xib */; };
+		FA724D9D264AEF90001CED6E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA724D9B264AEF90001CED6E /* HomeViewController.swift */; };
+		FA724D9E264AEF90001CED6E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA724D9C264AEF90001CED6E /* HomeViewController.xib */; };
+		FA724DA5264AF04A001CED6E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA724DA3264AF04A001CED6E /* ProfileViewController.swift */; };
+		FA724DA6264AF04A001CED6E /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA724DA4264AF04A001CED6E /* ProfileViewController.xib */; };
+		FA724DAB264AF05E001CED6E /* ImpianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA724DA9264AF05E001CED6E /* ImpianViewController.swift */; };
+		FA724DAC264AF05E001CED6E /* ImpianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA724DAA264AF05E001CED6E /* ImpianViewController.xib */; };
+		FA724DB1264AFB66001CED6E /* ImpianTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA724DAF264AFB66001CED6E /* ImpianTableViewCell.swift */; };
+		FA724DB2264AFB66001CED6E /* ImpianTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA724DB0264AFB66001CED6E /* ImpianTableViewCell.xib */; };
+		FA724DB8264B1B5B001CED6E /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA724DB6264B1B5B001CED6E /* HistoryTableViewCell.swift */; };
+		FA724DB9264B1B5B001CED6E /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA724DB7264B1B5B001CED6E /* HistoryTableViewCell.xib */; };
+		FA85FEDB264C29EB004D6C44 /* AddHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85FED9264C29EB004D6C44 /* AddHistoryViewController.swift */; };
+		FA85FEDC264C29EB004D6C44 /* AddHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA85FEDA264C29EB004D6C44 /* AddHistoryViewController.xib */; };
+		FA85FEE1264C2F2A004D6C44 /* PreviewHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85FEDF264C2F2A004D6C44 /* PreviewHistoryViewController.swift */; };
+		FA85FEE2264C2F2A004D6C44 /* PreviewHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA85FEE0264C2F2A004D6C44 /* PreviewHistoryViewController.xib */; };
+		FA85FEED264C3265004D6C44 /* EditHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85FEEB264C3265004D6C44 /* EditHistoryViewController.swift */; };
+		FA85FEEE264C3265004D6C44 /* EditHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA85FEEC264C3265004D6C44 /* EditHistoryViewController.xib */; };
+		FA85FEF4264C4693004D6C44 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85FEF2264C4693004D6C44 /* EditProfileViewController.swift */; };
+		FA85FEF5264C4693004D6C44 /* EditProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA85FEF3264C4693004D6C44 /* EditProfileViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BFF07D726D58951D6B4A069 /* Pods_MyMoneeTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMoneeTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34B0D4702FCB55B55C008D0C /* Pods-MyMoneeTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMoneeTutorial.debug.xcconfig"; path = "Target Support Files/Pods-MyMoneeTutorial/Pods-MyMoneeTutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		A5DC2674D455BAADFDC9A962 /* Pods-MyMoneeTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMoneeTutorial.release.xcconfig"; path = "Target Support Files/Pods-MyMoneeTutorial/Pods-MyMoneeTutorial.release.xcconfig"; sourceTree = "<group>"; };
+		FA5B285A26561E300065B495 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		FA5B285D26563A420065B495 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		FA5FEEA4264E7F1000D6AED3 /* AddImpianViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImpianViewController.swift; sourceTree = "<group>"; };
+		FA5FEEA5264E7F1000D6AED3 /* AddImpianViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddImpianViewController.xib; sourceTree = "<group>"; };
+		FA5FEEA9264EF89200D6AED3 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		FA5FEEAD264F1CBF00D6AED3 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		FA63227B264D1CDB0034FC58 /* PengeluaranPemasukan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PengeluaranPemasukan.swift; sourceTree = "<group>"; };
+		FA63227F264D78FD0034FC58 /* ListImpian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListImpian.swift; sourceTree = "<group>"; };
+		FA632283264D84200034FC58 /* DetilImpianViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetilImpianViewController.swift; sourceTree = "<group>"; };
+		FA632284264D84200034FC58 /* DetilImpianViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetilImpianViewController.xib; sourceTree = "<group>"; };
+		FA632289264D847F0034FC58 /* EditImpianViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditImpianViewController.swift; sourceTree = "<group>"; };
+		FA63228A264D847F0034FC58 /* EditImpianViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditImpianViewController.xib; sourceTree = "<group>"; };
+		FA6D7795265083C400956EEF /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		FA6D7796265083C400956EEF /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
 		FA724D73264AE221001CED6E /* MyMoneeTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMoneeTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA724D76264AE221001CED6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA724D78264AE221001CED6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +76,26 @@
 		FA724D7F264AE222001CED6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA724D82264AE222001CED6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA724D84264AE222001CED6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA724D93264AE432001CED6E /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		FA724D94264AE432001CED6E /* MainTabController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabController.xib; sourceTree = "<group>"; };
+		FA724D9B264AEF90001CED6E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FA724D9C264AEF90001CED6E /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		FA724DA3264AF04A001CED6E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FA724DA4264AF04A001CED6E /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		FA724DA9264AF05E001CED6E /* ImpianViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpianViewController.swift; sourceTree = "<group>"; };
+		FA724DAA264AF05E001CED6E /* ImpianViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImpianViewController.xib; sourceTree = "<group>"; };
+		FA724DAF264AFB66001CED6E /* ImpianTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpianTableViewCell.swift; sourceTree = "<group>"; };
+		FA724DB0264AFB66001CED6E /* ImpianTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImpianTableViewCell.xib; sourceTree = "<group>"; };
+		FA724DB6264B1B5B001CED6E /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		FA724DB7264B1B5B001CED6E /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		FA85FED9264C29EB004D6C44 /* AddHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHistoryViewController.swift; sourceTree = "<group>"; };
+		FA85FEDA264C29EB004D6C44 /* AddHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddHistoryViewController.xib; sourceTree = "<group>"; };
+		FA85FEDF264C2F2A004D6C44 /* PreviewHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewHistoryViewController.swift; sourceTree = "<group>"; };
+		FA85FEE0264C2F2A004D6C44 /* PreviewHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewHistoryViewController.xib; sourceTree = "<group>"; };
+		FA85FEEB264C3265004D6C44 /* EditHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditHistoryViewController.swift; sourceTree = "<group>"; };
+		FA85FEEC264C3265004D6C44 /* EditHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditHistoryViewController.xib; sourceTree = "<group>"; };
+		FA85FEF2264C4693004D6C44 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		FA85FEF3264C4693004D6C44 /* EditProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfileViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +103,101 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EF9D340F5E64861B16054F6 /* Pods_MyMoneeTutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AA4C855E4533A1FF288A878 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34B0D4702FCB55B55C008D0C /* Pods-MyMoneeTutorial.debug.xcconfig */,
+				A5DC2674D455BAADFDC9A962 /* Pods-MyMoneeTutorial.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		905969BA88759C51CA24CC47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BFF07D726D58951D6B4A069 /* Pods_MyMoneeTutorial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA5B285926561E080065B495 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				FA5B285A26561E300065B495 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		FA5FEE9C264E7D1F00D6AED3 /* AddImpian */ = {
+			isa = PBXGroup;
+			children = (
+				FA5FEEA4264E7F1000D6AED3 /* AddImpianViewController.swift */,
+				FA5FEEA5264E7F1000D6AED3 /* AddImpianViewController.xib */,
+			);
+			path = AddImpian;
+			sourceTree = "<group>";
+		};
+		FA5FEEAC264F1CAC00D6AED3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FA5FEEAD264F1CBF00D6AED3 /* HomeService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FA63227A264D1C9B0034FC58 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FA63227B264D1CDB0034FC58 /* PengeluaranPemasukan.swift */,
+				FA63227F264D78FD0034FC58 /* ListImpian.swift */,
+				FA5FEEA9264EF89200D6AED3 /* Profile.swift */,
+				FA5B285D26563A420065B495 /* Transaction.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FA632282264D83F90034FC58 /* DetilImpian */ = {
+			isa = PBXGroup;
+			children = (
+				FA632283264D84200034FC58 /* DetilImpianViewController.swift */,
+				FA632284264D84200034FC58 /* DetilImpianViewController.xib */,
+			);
+			path = DetilImpian;
+			sourceTree = "<group>";
+		};
+		FA632288264D84350034FC58 /* EditImpian */ = {
+			isa = PBXGroup;
+			children = (
+				FA632289264D847F0034FC58 /* EditImpianViewController.swift */,
+				FA63228A264D847F0034FC58 /* EditImpianViewController.xib */,
+			);
+			path = EditImpian;
+			sourceTree = "<group>";
+		};
+		FA6D77942650835600956EEF /* GaleryPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				FA6D7795265083C400956EEF /* CollectionViewController.swift */,
+				FA6D7796265083C400956EEF /* CollectionViewController.xib */,
+			);
+			path = GaleryPhoto;
+			sourceTree = "<group>";
+		};
 		FA724D6A264AE221001CED6E = {
 			isa = PBXGroup;
 			children = (
 				FA724D75264AE221001CED6E /* MyMoneeTutorial */,
 				FA724D74264AE221001CED6E /* Products */,
+				2AA4C855E4533A1FF288A878 /* Pods */,
+				905969BA88759C51CA24CC47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +212,13 @@
 		FA724D75264AE221001CED6E /* MyMoneeTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				FA5B285926561E080065B495 /* NetworkService */,
+				FA5FEEAC264F1CAC00D6AED3 /* Service */,
+				FA63227A264D1C9B0034FC58 /* model */,
+				FA724DA2264AF038001CED6E /* Profile */,
+				FA724DA1264AF012001CED6E /* Impian */,
+				FA724D9A264AEF6B001CED6E /* Home */,
+				FA724D92264AE403001CED6E /* MainTab */,
 				FA724D76264AE221001CED6E /* AppDelegate.swift */,
 				FA724D78264AE221001CED6E /* SceneDelegate.swift */,
 				FA724D7A264AE221001CED6E /* ViewController.swift */,
@@ -67,6 +230,106 @@
 			path = MyMoneeTutorial;
 			sourceTree = "<group>";
 		};
+		FA724D92264AE403001CED6E /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				FA724D93264AE432001CED6E /* MainTabController.swift */,
+				FA724D94264AE432001CED6E /* MainTabController.xib */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		FA724D9A264AEF6B001CED6E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FA85FEEA264C3245004D6C44 /* EditHistory */,
+				FA85FEDE264C2EFC004D6C44 /* PreviewHistory */,
+				FA85FED8264C1282004D6C44 /* AddHistory */,
+				FA724DB5264B1B39001CED6E /* HomeHistory */,
+				FA724D9B264AEF90001CED6E /* HomeViewController.swift */,
+				FA724D9C264AEF90001CED6E /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FA724DA1264AF012001CED6E /* Impian */ = {
+			isa = PBXGroup;
+			children = (
+				FA5FEE9C264E7D1F00D6AED3 /* AddImpian */,
+				FA632288264D84350034FC58 /* EditImpian */,
+				FA632282264D83F90034FC58 /* DetilImpian */,
+				FA724DAE264AFB3B001CED6E /* ImpianTableView */,
+				FA724DA9264AF05E001CED6E /* ImpianViewController.swift */,
+				FA724DAA264AF05E001CED6E /* ImpianViewController.xib */,
+			);
+			path = Impian;
+			sourceTree = "<group>";
+		};
+		FA724DA2264AF038001CED6E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FA6D77942650835600956EEF /* GaleryPhoto */,
+				FA85FEF1264C467B004D6C44 /* EditProfile */,
+				FA724DA3264AF04A001CED6E /* ProfileViewController.swift */,
+				FA724DA4264AF04A001CED6E /* ProfileViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FA724DAE264AFB3B001CED6E /* ImpianTableView */ = {
+			isa = PBXGroup;
+			children = (
+				FA724DAF264AFB66001CED6E /* ImpianTableViewCell.swift */,
+				FA724DB0264AFB66001CED6E /* ImpianTableViewCell.xib */,
+			);
+			path = ImpianTableView;
+			sourceTree = "<group>";
+		};
+		FA724DB5264B1B39001CED6E /* HomeHistory */ = {
+			isa = PBXGroup;
+			children = (
+				FA724DB6264B1B5B001CED6E /* HistoryTableViewCell.swift */,
+				FA724DB7264B1B5B001CED6E /* HistoryTableViewCell.xib */,
+			);
+			path = HomeHistory;
+			sourceTree = "<group>";
+		};
+		FA85FED8264C1282004D6C44 /* AddHistory */ = {
+			isa = PBXGroup;
+			children = (
+				FA85FED9264C29EB004D6C44 /* AddHistoryViewController.swift */,
+				FA85FEDA264C29EB004D6C44 /* AddHistoryViewController.xib */,
+			);
+			path = AddHistory;
+			sourceTree = "<group>";
+		};
+		FA85FEDE264C2EFC004D6C44 /* PreviewHistory */ = {
+			isa = PBXGroup;
+			children = (
+				FA85FEDF264C2F2A004D6C44 /* PreviewHistoryViewController.swift */,
+				FA85FEE0264C2F2A004D6C44 /* PreviewHistoryViewController.xib */,
+			);
+			path = PreviewHistory;
+			sourceTree = "<group>";
+		};
+		FA85FEEA264C3245004D6C44 /* EditHistory */ = {
+			isa = PBXGroup;
+			children = (
+				FA85FEEB264C3265004D6C44 /* EditHistoryViewController.swift */,
+				FA85FEEC264C3265004D6C44 /* EditHistoryViewController.xib */,
+			);
+			path = EditHistory;
+			sourceTree = "<group>";
+		};
+		FA85FEF1264C467B004D6C44 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				FA85FEF2264C4693004D6C44 /* EditProfileViewController.swift */,
+				FA85FEF3264C4693004D6C44 /* EditProfileViewController.xib */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +337,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA724D87264AE222001CED6E /* Build configuration list for PBXNativeTarget "MyMoneeTutorial" */;
 			buildPhases = (
+				74ABC8FCFEF7C2E222A62570 /* [CP] Check Pods Manifest.lock */,
 				FA724D6F264AE221001CED6E /* Sources */,
 				FA724D70264AE221001CED6E /* Frameworks */,
 				FA724D71264AE221001CED6E /* Resources */,
+				7254A59685761961A352B046 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,22 +389,98 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA724DA6264AF04A001CED6E /* ProfileViewController.xib in Resources */,
+				FA63228C264D847F0034FC58 /* EditImpianViewController.xib in Resources */,
+				FA5FEEA7264E7F1000D6AED3 /* AddImpianViewController.xib in Resources */,
+				FA85FEF5264C4693004D6C44 /* EditProfileViewController.xib in Resources */,
+				FA85FEDC264C29EB004D6C44 /* AddHistoryViewController.xib in Resources */,
+				FA724DB2264AFB66001CED6E /* ImpianTableViewCell.xib in Resources */,
 				FA724D83264AE222001CED6E /* LaunchScreen.storyboard in Resources */,
+				FA6D7798265083C400956EEF /* CollectionViewController.xib in Resources */,
+				FA632286264D84200034FC58 /* DetilImpianViewController.xib in Resources */,
 				FA724D80264AE222001CED6E /* Assets.xcassets in Resources */,
+				FA85FEEE264C3265004D6C44 /* EditHistoryViewController.xib in Resources */,
+				FA724D9E264AEF90001CED6E /* HomeViewController.xib in Resources */,
 				FA724D7E264AE221001CED6E /* Main.storyboard in Resources */,
+				FA724DAC264AF05E001CED6E /* ImpianViewController.xib in Resources */,
+				FA724DB9264B1B5B001CED6E /* HistoryTableViewCell.xib in Resources */,
+				FA724D96264AE432001CED6E /* MainTabController.xib in Resources */,
+				FA85FEE2264C2F2A004D6C44 /* PreviewHistoryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7254A59685761961A352B046 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyMoneeTutorial/Pods-MyMoneeTutorial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyMoneeTutorial/Pods-MyMoneeTutorial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyMoneeTutorial/Pods-MyMoneeTutorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74ABC8FCFEF7C2E222A62570 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyMoneeTutorial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA724D6F264AE221001CED6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5B285B26561E300065B495 /* NetworkService.swift in Sources */,
+				FA63227C264D1CDB0034FC58 /* PengeluaranPemasukan.swift in Sources */,
+				FA85FEF4264C4693004D6C44 /* EditProfileViewController.swift in Sources */,
+				FA724DB8264B1B5B001CED6E /* HistoryTableViewCell.swift in Sources */,
+				FA632280264D78FD0034FC58 /* ListImpian.swift in Sources */,
+				FA724DA5264AF04A001CED6E /* ProfileViewController.swift in Sources */,
+				FA724DAB264AF05E001CED6E /* ImpianViewController.swift in Sources */,
+				FA724D9D264AEF90001CED6E /* HomeViewController.swift in Sources */,
 				FA724D7B264AE221001CED6E /* ViewController.swift in Sources */,
+				FA85FEED264C3265004D6C44 /* EditHistoryViewController.swift in Sources */,
+				FA632285264D84200034FC58 /* DetilImpianViewController.swift in Sources */,
+				FA85FEE1264C2F2A004D6C44 /* PreviewHistoryViewController.swift in Sources */,
 				FA724D77264AE221001CED6E /* AppDelegate.swift in Sources */,
+				FA724DB1264AFB66001CED6E /* ImpianTableViewCell.swift in Sources */,
+				FA5B285E26563A420065B495 /* Transaction.swift in Sources */,
+				FA724D95264AE432001CED6E /* MainTabController.swift in Sources */,
+				FA5FEEAE264F1CBF00D6AED3 /* HomeService.swift in Sources */,
 				FA724D79264AE221001CED6E /* SceneDelegate.swift in Sources */,
+				FA63228B264D847F0034FC58 /* EditImpianViewController.swift in Sources */,
+				FA5FEEAA264EF89200D6AED3 /* Profile.swift in Sources */,
+				FA6D7797265083C400956EEF /* CollectionViewController.swift in Sources */,
+				FA5FEEA6264E7F1000D6AED3 /* AddImpianViewController.swift in Sources */,
+				FA85FEDB264C29EB004D6C44 /* AddHistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +624,7 @@
 		};
 		FA724D88264AE222001CED6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34B0D4702FCB55B55C008D0C /* Pods-MyMoneeTutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,7 +634,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mandiri.MyMoneeTutorial;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mandiri.MyMonee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -301,6 +643,7 @@
 		};
 		FA724D89264AE222001CED6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5DC2674D455BAADFDC9A962 /* Pods-MyMoneeTutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,7 +653,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mandiri.MyMoneeTutorial;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mandiri.MyMonee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

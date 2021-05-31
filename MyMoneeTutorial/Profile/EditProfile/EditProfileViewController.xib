@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditProfileViewController" customModule="MyMoneeTutorial" customModuleProvider="target">
+            <connections>
+                <outlet property="btnEditImage" destination="j3O-ZG-Ysp" id="HC9-aH-8jX"/>
+                <outlet property="btnEditName" destination="1yi-OC-3l2" id="sAb-NE-TI7"/>
+                <outlet property="imageProfile" destination="zTz-Rd-xjz" id="Kav-bM-hMV"/>
+                <outlet property="lblName" destination="21m-sI-MnO" id="5VA-k0-m1u"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="UIViewContr" customModule="MyMoneeTutorial" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XKx-Vw-LD8">
+                    <rect key="frame" x="0.0" y="44" width="414" height="260"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bagus! Pengeluaranmu lebih sedikit dari Pemasukan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b14-iC-bzp">
+                            <rect key="frame" x="85" y="202" width="244" height="31.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" systemColor="systemBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRN-sA-orQ">
+                            <rect key="frame" x="341" y="30" width="53" height="30"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="Selesai">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapButton" destination="-1" eventType="touchUpInside" id="OxZ-O8-Isl"/>
+                                <action selector="didTapButtonSelesai" destination="-1" eventType="touchUpInside" id="HEb-OB-3Ad"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3O-ZG-Ysp">
+                            <rect key="frame" x="244" y="128" width="24" height="24"/>
+                            <state key="normal" image="Edit-1"/>
+                            <connections>
+                                <action selector="didTapEditImage:" destination="-1" eventType="touchUpInside" id="IGq-ws-83a"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21m-sI-MnO">
+                            <rect key="frame" x="141" y="170" width="132" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" systemColor="systemBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yi-OC-3l2">
+                            <rect key="frame" x="272" y="167" width="24" height="24"/>
+                            <state key="normal" image="Edit-1"/>
+                            <connections>
+                                <action selector="btnEditName:" destination="-1" eventType="touchUpInside" id="CDr-Tz-2Yb"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-1" translatesAutoresizingMaskIntoConstraints="NO" id="zTz-Rd-xjz">
+                            <rect key="frame" x="157" y="52" width="100" height="101"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="hRN-sA-orQ" secondAttribute="trailing" constant="20" id="Rar-Mf-fWK"/>
+                        <constraint firstItem="zTz-Rd-xjz" firstAttribute="leading" secondItem="XKx-Vw-LD8" secondAttribute="leading" constant="157" id="Sb3-ge-fZC"/>
+                        <constraint firstItem="j3O-ZG-Ysp" firstAttribute="top" secondItem="XKx-Vw-LD8" secondAttribute="top" constant="128" id="T07-Sg-lRc"/>
+                        <constraint firstItem="b14-iC-bzp" firstAttribute="leading" secondItem="XKx-Vw-LD8" secondAttribute="leading" constant="85" id="bvj-0A-ZnK"/>
+                        <constraint firstItem="j3O-ZG-Ysp" firstAttribute="leading" secondItem="XKx-Vw-LD8" secondAttribute="leading" constant="244" id="eSA-fa-gFc"/>
+                        <constraint firstAttribute="trailing" secondItem="zTz-Rd-xjz" secondAttribute="trailing" constant="157" id="gRm-Gw-KEp"/>
+                        <constraint firstAttribute="bottom" secondItem="b14-iC-bzp" secondAttribute="bottom" constant="26.5" id="iPI-yh-4fb"/>
+                        <constraint firstAttribute="trailing" secondItem="j3O-ZG-Ysp" secondAttribute="trailing" constant="146" id="lFa-Tl-ocn"/>
+                        <constraint firstAttribute="trailing" secondItem="b14-iC-bzp" secondAttribute="trailing" constant="85" id="laJ-jk-x1Y"/>
+                        <constraint firstAttribute="bottom" secondItem="1yi-OC-3l2" secondAttribute="bottom" constant="69" id="suQ-yJ-nXd"/>
+                        <constraint firstItem="hRN-sA-orQ" firstAttribute="top" secondItem="XKx-Vw-LD8" secondAttribute="top" constant="30" id="tTX-cg-fmK"/>
+                        <constraint firstItem="zTz-Rd-xjz" firstAttribute="top" secondItem="XKx-Vw-LD8" secondAttribute="top" constant="52" id="uKg-cF-wdU"/>
+                        <constraint firstItem="1yi-OC-3l2" firstAttribute="top" secondItem="hRN-sA-orQ" secondAttribute="bottom" constant="107" id="wPl-hQ-kEr"/>
+                        <constraint firstAttribute="trailing" secondItem="1yi-OC-3l2" secondAttribute="trailing" constant="118" id="wVE-6l-DaR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="XKx-Vw-LD8" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Ea7-4r-ogy"/>
+                <constraint firstItem="XKx-Vw-LD8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eNb-Go-xWn"/>
+                <constraint firstItem="XKx-Vw-LD8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="rvk-QR-Zyr"/>
+            </constraints>
+            <point key="canvasLocation" x="111.59420289855073" y="72.991071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Edit-1" width="24" height="24"/>
+        <image name="profile-1" width="101" height="101"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

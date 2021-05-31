@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddImpianViewController" customModule="MyMoneeTutorial" customModuleProvider="target">
+            <connections>
+                <outlet property="txtJudul" destination="1g3-Rd-kau" id="pBq-vW-Kca"/>
+                <outlet property="txtTarget" destination="ryR-mQ-GHQ" id="PfL-a0-Ucm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Judul" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRd-oV-jsI">
+                    <rect key="frame" x="20" y="64" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target Capaian (Rp)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJw-fk-K07">
+                    <rect key="frame" x="20" y="174" width="152" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Beli" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1g3-Rd-kau">
+                    <rect key="frame" x="20" y="95" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="999" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ryR-mQ-GHQ">
+                    <rect key="frame" x="20" y="205" width="374" height="36"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fo-2c-isL">
+                    <rect key="frame" x="20" y="769" width="374" height="43"/>
+                    <state key="normal" image="Button Simpan"/>
+                    <connections>
+                        <action selector="didTapButtonSimpan" destination="-1" eventType="touchUpInside" id="qYa-mG-bEz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1g3-Rd-kau" secondAttribute="trailing" constant="20" id="14Q-lP-RAX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="3fo-2c-isL" secondAttribute="bottom" constant="50" id="25r-cG-qDZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ryR-mQ-GHQ" secondAttribute="trailing" constant="20" id="6JQ-TF-dna"/>
+                <constraint firstItem="QRd-oV-jsI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="7mC-bB-jqt"/>
+                <constraint firstItem="wJw-fk-K07" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="FU9-RL-rwK"/>
+                <constraint firstItem="1g3-Rd-kau" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Mcu-ym-rOC"/>
+                <constraint firstItem="1g3-Rd-kau" firstAttribute="top" secondItem="QRd-oV-jsI" secondAttribute="bottom" constant="10" id="Wvk-Rh-U7e"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3fo-2c-isL" secondAttribute="trailing" constant="20" id="YPs-HW-AwY"/>
+                <constraint firstItem="QRd-oV-jsI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="agk-Qv-06b"/>
+                <constraint firstItem="ryR-mQ-GHQ" firstAttribute="top" secondItem="wJw-fk-K07" secondAttribute="bottom" constant="10" id="biP-Cf-NdW"/>
+                <constraint firstItem="wJw-fk-K07" firstAttribute="top" secondItem="1g3-Rd-kau" secondAttribute="bottom" constant="45" id="dxh-rZ-x2L"/>
+                <constraint firstItem="ryR-mQ-GHQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="qmK-B1-izb"/>
+                <constraint firstItem="3fo-2c-isL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="tZf-ZJ-MiB"/>
+            </constraints>
+            <point key="canvasLocation" x="-467" y="127"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Button Simpan" width="338" height="43"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

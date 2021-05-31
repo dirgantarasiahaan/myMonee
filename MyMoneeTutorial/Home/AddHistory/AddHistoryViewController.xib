@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddHistoryViewController" customModule="MyMoneeTutorial" customModuleProvider="target">
+            <connections>
+                <outlet property="btnIncome" destination="33v-gV-oSH" id="8Yy-aG-RjM"/>
+                <outlet property="btnOutcome" destination="YEn-Hh-DWW" id="LHk-xI-kDu"/>
+                <outlet property="btnSave" destination="xLD-tL-9Ze" id="MiN-oM-j79"/>
+                <outlet property="txtJudul" destination="enp-0r-vIY" id="SJq-Os-ZLw"/>
+                <outlet property="txtJumlah" destination="9cu-oh-zdE" id="9WR-df-UGn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Judul" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kua-12-tt5">
+                    <rect key="frame" x="20" y="106" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bayar " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="enp-0r-vIY">
+                    <rect key="frame" x="20" y="135" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jumlah (Rp)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPa-mz-DcJ">
+                    <rect key="frame" x="20" y="199" width="93" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="999" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9cu-oh-zdE">
+                    <rect key="frame" x="20" y="230" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEn-Hh-DWW">
+                    <rect key="frame" x="219" y="341" width="175" height="85"/>
+                    <state key="normal" image="Pengeluaran"/>
+                    <connections>
+                        <action selector="btnPengeluaran:" destination="-1" eventType="touchUpInside" id="eI2-KL-PVC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33v-gV-oSH">
+                    <rect key="frame" x="20" y="341" width="173" height="85"/>
+                    <state key="normal" image="Pemasukan"/>
+                    <connections>
+                        <action selector="btnPemasukan:" destination="-1" eventType="touchUpInside" id="QXS-4X-RHD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLD-tL-9Ze">
+                    <rect key="frame" x="20" y="749" width="374" height="43"/>
+                    <state key="normal" image="Button Simpan"/>
+                    <connections>
+                        <action selector="didTapButtonSimpan" destination="-1" eventType="touchUpInside" id="QUe-Xo-b0e"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kategori Penggunaan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nw7-cY-Zve">
+                    <rect key="frame" x="20" y="312" width="164" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstItem="33v-gV-oSH" firstAttribute="top" secondItem="9cu-oh-zdE" secondAttribute="bottom" constant="77" id="1VP-9x-IOO"/>
+                <constraint firstItem="Nw7-cY-Zve" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="1qf-8S-Ky5"/>
+                <constraint firstItem="enp-0r-vIY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="7Ck-UL-HNU"/>
+                <constraint firstItem="gPa-mz-DcJ" firstAttribute="top" secondItem="enp-0r-vIY" secondAttribute="bottom" constant="30" id="CF7-CX-ZUD"/>
+                <constraint firstItem="kua-12-tt5" firstAttribute="leading" secondItem="9cu-oh-zdE" secondAttribute="leading" id="CF9-nI-Whz"/>
+                <constraint firstItem="YEn-Hh-DWW" firstAttribute="top" secondItem="9cu-oh-zdE" secondAttribute="bottom" constant="77" id="M0i-wF-gCn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9cu-oh-zdE" secondAttribute="trailing" constant="20" id="MG5-Kn-u8U"/>
+                <constraint firstItem="enp-0r-vIY" firstAttribute="top" secondItem="kua-12-tt5" secondAttribute="bottom" constant="8" symbolic="YES" id="MlJ-CU-bSI"/>
+                <constraint firstItem="xLD-tL-9Ze" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="MzS-Qf-ba4"/>
+                <constraint firstItem="gPa-mz-DcJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="UNH-h0-FJa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xLD-tL-9Ze" secondAttribute="bottom" constant="70" id="Uab-SP-tU8"/>
+                <constraint firstItem="33v-gV-oSH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="VSB-Cj-Mbw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="enp-0r-vIY" secondAttribute="trailing" constant="20" id="Z6A-83-1Dw"/>
+                <constraint firstItem="33v-gV-oSH" firstAttribute="top" secondItem="Nw7-cY-Zve" secondAttribute="bottom" constant="8" symbolic="YES" id="aqH-MG-Ryf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YEn-Hh-DWW" secondAttribute="trailing" constant="20" id="cRb-iz-0I9"/>
+                <constraint firstItem="kua-12-tt5" firstAttribute="leading" secondItem="gPa-mz-DcJ" secondAttribute="leading" id="cSP-eD-ctp"/>
+                <constraint firstItem="9cu-oh-zdE" firstAttribute="top" secondItem="gPa-mz-DcJ" secondAttribute="bottom" constant="10" id="cZn-v1-nFU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xLD-tL-9Ze" secondAttribute="trailing" constant="20" id="fwm-pP-svg"/>
+                <constraint firstItem="kua-12-tt5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="62" id="h1O-yi-rN4"/>
+                <constraint firstItem="kua-12-tt5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="jTI-ZA-eXl"/>
+                <constraint firstItem="9cu-oh-zdE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="xin-Lg-Yec"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="96.428571428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Button Simpan" width="338" height="43"/>
+        <image name="Pemasukan" width="173" height="85"/>
+        <image name="Pengeluaran" width="175" height="85"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditHistoryViewController" customModule="MyMoneeTutorial" customModuleProvider="target">
+            <connections>
+                <outlet property="btnIncome" destination="etZ-eJ-2ZD" id="XbN-O9-oiw"/>
+                <outlet property="btnOutcome" destination="eg2-0G-h67" id="b8Q-HM-JGC"/>
+                <outlet property="txtJudul" destination="OyC-Dh-NPA" id="N2T-d2-zFQ"/>
+                <outlet property="txtJumlah" destination="DNR-c0-ktH" id="Y4k-VO-I2Q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Judul" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtB-uv-XfQ">
+                    <rect key="frame" x="20" y="94" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="judul" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OyC-Dh-NPA">
+                    <rect key="frame" x="20" y="129" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="jumlah" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DNR-c0-ktH">
+                    <rect key="frame" x="20" y="219" width="374" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jumlah (Rp)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1Q-KN-qv4">
+                    <rect key="frame" x="20" y="193" width="93" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kategori Penggunaan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCP-E5-afd">
+                    <rect key="frame" x="20" y="303" width="164" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etZ-eJ-2ZD">
+                    <rect key="frame" x="20" y="332" width="173" height="85"/>
+                    <state key="normal" image="Pemasukan"/>
+                    <connections>
+                        <action selector="btnPemasukan:" destination="-1" eventType="touchUpInside" id="W52-8s-zM6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eg2-0G-h67">
+                    <rect key="frame" x="219" y="332" width="175" height="85"/>
+                    <state key="normal" image="Pengeluaran"/>
+                    <connections>
+                        <action selector="btnPengeluaran:" destination="-1" eventType="touchUpInside" id="tdq-dm-3fd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JK8-es-Rlh">
+                    <rect key="frame" x="20" y="769" width="374" height="43"/>
+                    <state key="normal" image="Button Hapus"/>
+                    <connections>
+                        <action selector="btnHapus:" destination="-1" eventType="touchUpInside" id="Y40-fz-Ipi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dtb-VT-ovu">
+                    <rect key="frame" x="20" y="706" width="374" height="43"/>
+                    <state key="normal" image="Button Perbarui"/>
+                    <connections>
+                        <action selector="btnPerbarui:" destination="-1" eventType="touchUpInside" id="Xkd-E5-8Mv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstItem="qCP-E5-afd" firstAttribute="top" secondItem="DNR-c0-ktH" secondAttribute="bottom" constant="45" id="2Fq-xs-o7I"/>
+                <constraint firstItem="OyC-Dh-NPA" firstAttribute="top" secondItem="UtB-uv-XfQ" secondAttribute="bottom" constant="14" id="4ua-aJ-XKX"/>
+                <constraint firstItem="eg2-0G-h67" firstAttribute="top" secondItem="DNR-c0-ktH" secondAttribute="bottom" constant="74" id="6YE-Oz-kac"/>
+                <constraint firstItem="r1Q-KN-qv4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="8kG-QN-eSg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OyC-Dh-NPA" secondAttribute="trailing" constant="20" id="AM0-Ex-FEC"/>
+                <constraint firstItem="OyC-Dh-NPA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Agg-ev-bTg"/>
+                <constraint firstItem="JK8-es-Rlh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="CPR-n8-UmD"/>
+                <constraint firstItem="UtB-uv-XfQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="G3a-8f-xej"/>
+                <constraint firstItem="OyC-Dh-NPA" firstAttribute="trailing" secondItem="eg2-0G-h67" secondAttribute="trailing" id="IDp-vH-1TQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JK8-es-Rlh" secondAttribute="bottom" constant="50" id="Lkh-Pd-CC6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JK8-es-Rlh" secondAttribute="trailing" constant="20" id="OXo-J7-zXa"/>
+                <constraint firstItem="Dtb-VT-ovu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="P5p-zC-UyI"/>
+                <constraint firstItem="r1Q-KN-qv4" firstAttribute="leading" secondItem="DNR-c0-ktH" secondAttribute="leading" id="SeV-Jh-Mcm"/>
+                <constraint firstItem="r1Q-KN-qv4" firstAttribute="leading" secondItem="etZ-eJ-2ZD" secondAttribute="leading" id="VgA-Oo-f7l"/>
+                <constraint firstItem="DNR-c0-ktH" firstAttribute="top" secondItem="r1Q-KN-qv4" secondAttribute="bottom" constant="8" symbolic="YES" id="YYp-pH-k47"/>
+                <constraint firstItem="r1Q-KN-qv4" firstAttribute="top" secondItem="OyC-Dh-NPA" secondAttribute="bottom" constant="30" id="Zym-cc-B7e"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eg2-0G-h67" secondAttribute="trailing" constant="20" id="cH5-vc-qBE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Dtb-VT-ovu" secondAttribute="trailing" constant="20" id="emh-X3-yl1"/>
+                <constraint firstItem="etZ-eJ-2ZD" firstAttribute="top" secondItem="qCP-E5-afd" secondAttribute="bottom" constant="8" symbolic="YES" id="g4w-Kn-Mrb"/>
+                <constraint firstItem="r1Q-KN-qv4" firstAttribute="leading" secondItem="qCP-E5-afd" secondAttribute="leading" id="nRd-a2-VMv"/>
+                <constraint firstItem="OyC-Dh-NPA" firstAttribute="trailing" secondItem="DNR-c0-ktH" secondAttribute="trailing" id="ogO-zK-OsP"/>
+                <constraint firstItem="UtB-uv-XfQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="u0j-Es-YUA"/>
+                <constraint firstItem="etZ-eJ-2ZD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="vZz-u2-z7C"/>
+                <constraint firstItem="JK8-es-Rlh" firstAttribute="top" secondItem="Dtb-VT-ovu" secondAttribute="bottom" constant="20" id="vyG-3u-Be8"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="96.428571428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Button Hapus" width="338" height="43"/>
+        <image name="Button Perbarui" width="338" height="43"/>
+        <image name="Pemasukan" width="173" height="85"/>
+        <image name="Pengeluaran" width="175" height="85"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImpianViewController" customModule="MyMoneeTutorial" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAdd" destination="XNR-28-xKL" id="UbH-4f-ayR"/>
+                <outlet property="btnBuatImpian" destination="lgf-Al-ePY" id="OSg-gD-duS"/>
+                <outlet property="impianTableView" destination="g4a-qh-ptv" id="NpH-sG-hu6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Impian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjY-aB-yAS">
+                    <rect key="frame" x="20" y="74" width="95" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g4a-qh-ptv">
+                    <rect key="frame" x="0.0" y="131" width="414" height="731"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNR-28-xKL">
+                    <rect key="frame" x="358" y="69" width="36" height="36"/>
+                    <state key="normal" image="Button Plus"/>
+                    <connections>
+                        <action selector="didTapButton" destination="-1" eventType="touchUpInside" id="oiQ-Qz-5gd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgf-Al-ePY">
+                    <rect key="frame" x="92" y="538" width="231" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="Buat Impian"/>
+                    <connections>
+                        <action selector="didTapButton" destination="-1" eventType="touchUpInside" id="OGx-DC-FSo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstItem="g4a-qh-ptv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3cz-K4-ljT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="g4a-qh-ptv" secondAttribute="bottom" id="4in-pP-wH6"/>
+                <constraint firstItem="JjY-aB-yAS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="7M2-UL-J2V"/>
+                <constraint firstItem="JjY-aB-yAS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="MPk-sc-LJR"/>
+                <constraint firstItem="XNR-28-xKL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="ZSW-XR-GOV"/>
+                <constraint firstItem="g4a-qh-ptv" firstAttribute="top" secondItem="JjY-aB-yAS" secondAttribute="bottom" constant="21" id="edy-Js-4qf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XNR-28-xKL" secondAttribute="trailing" constant="20" id="p0W-Il-g7y"/>
+                <constraint firstItem="g4a-qh-ptv" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="zQd-13-NKK"/>
+            </constraints>
+            <point key="canvasLocation" x="95.652173913043484" y="96.428571428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Buat Impian" width="231" height="43"/>
+        <image name="Button Plus" width="36" height="36"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
