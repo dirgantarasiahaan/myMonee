@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Kingfisher
+//import Kingfisher
 
 class ProfileViewController: UIViewController {
 

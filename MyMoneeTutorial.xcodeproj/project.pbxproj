@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5EF9D340F5E64861B16054F6 /* Pods_MyMoneeTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BFF07D726D58951D6B4A069 /* Pods_MyMoneeTutorial.framework */; };
 		FA5B285B26561E300065B495 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B285A26561E300065B495 /* NetworkService.swift */; };
 		FA5B285E26563A420065B495 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B285D26563A420065B495 /* Transaction.swift */; };
 		FA5FEEA6264E7F1000D6AED3 /* AddImpianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5FEEA4264E7F1000D6AED3 /* AddImpianViewController.swift */; };
@@ -51,8 +50,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1BFF07D726D58951D6B4A069 /* Pods_MyMoneeTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMoneeTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B0D4702FCB55B55C008D0C /* Pods-MyMoneeTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMoneeTutorial.debug.xcconfig"; path = "Target Support Files/Pods-MyMoneeTutorial/Pods-MyMoneeTutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		9732201FA61260F8F1675E03 /* libPods-MyMoneeTutorial.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyMoneeTutorial.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5DC2674D455BAADFDC9A962 /* Pods-MyMoneeTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMoneeTutorial.release.xcconfig"; path = "Target Support Files/Pods-MyMoneeTutorial/Pods-MyMoneeTutorial.release.xcconfig"; sourceTree = "<group>"; };
 		FA5B285A26561E300065B495 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		FA5B285D26563A420065B495 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
@@ -103,7 +102,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EF9D340F5E64861B16054F6 /* Pods_MyMoneeTutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,14 +114,13 @@
 				34B0D4702FCB55B55C008D0C /* Pods-MyMoneeTutorial.debug.xcconfig */,
 				A5DC2674D455BAADFDC9A962 /* Pods-MyMoneeTutorial.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		905969BA88759C51CA24CC47 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1BFF07D726D58951D6B4A069 /* Pods_MyMoneeTutorial.framework */,
+				9732201FA61260F8F1675E03 /* libPods-MyMoneeTutorial.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -341,7 +338,6 @@
 				FA724D6F264AE221001CED6E /* Sources */,
 				FA724D70264AE221001CED6E /* Frameworks */,
 				FA724D71264AE221001CED6E /* Resources */,
-				7254A59685761961A352B046 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -412,23 +408,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7254A59685761961A352B046 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MyMoneeTutorial/Pods-MyMoneeTutorial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MyMoneeTutorial/Pods-MyMoneeTutorial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyMoneeTutorial/Pods-MyMoneeTutorial-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		74ABC8FCFEF7C2E222A62570 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
